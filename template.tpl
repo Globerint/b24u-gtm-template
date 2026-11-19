@@ -135,14 +135,14 @@ ___WEB_PERMISSIONS___
 ___TESTS___
 
 scenarios:
-  - name: Loads the widget from b24u.com for a plain domain
+  - name: Loads the widget from the com server for a plain domain
     code: |-
       let injected = '';
       mock('injectScript', (url, onSuccess, onFailure) => { injected = url; onSuccess(); });
       runCode({domain: 'example.com', server: 'com'});
       assertThat(injected).isEqualTo('https://i.b24u.com/example.com');
       assertApi('gtmOnSuccess').wasCalled();
-  - name: Cleans protocol, www, path and port and uses b24u.ru
+  - name: Cleans protocol, www, path and port and uses the ru server
     code: |-
       let injected = '';
       mock('injectScript', (url, onSuccess, onFailure) => { injected = url; onSuccess(); });
