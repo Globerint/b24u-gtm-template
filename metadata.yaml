@@ -1,0 +1,5 @@
+homepage: "https://b24u.com/plugins"
+documentation: "https://github.com/Globerint/b24u-gtm-template#readme"
+versions:
+  - sha: 799b057ebd190f8fe29d6c37d10df4657f7e817a
+    changeNotes: Initial release.
